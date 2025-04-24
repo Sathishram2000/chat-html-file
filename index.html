@@ -14,38 +14,40 @@
       />
       <p id="pp">Docs AI</p>
     </div>
-    <div class="container" id="popup" class="popup" style="display: block">
-      <nav style="background-color: #4f279b">
-        <button id="close-popup">X</button>
-        <h1>Bulkpe Chatbot</h1>
-        <p>Assistance for APIs, integration, and general Bulkpe queries.</p>
-      </nav>
-      <div class="chat">
-        <div class="santaSays">
-          <div class="img-box"></div>
-          <div class="text-box-santa">
-            <div class="text">
-              <p>Ask like...</p>
-              <p>What is bulkpe ?</p>
-              <p>What you can do?</p>
+    <div class="xxyx">
+      <div class="container" id="popup" class="popup" style="display: none">
+        <nav style="background-color: #4f279b">
+          <button id="close-popup">X</button>
+          <h1>Bulkpe Chatbot</h1>
+          <p>Assistance for APIs, integration, and general Bulkpe queries.</p>
+        </nav>
+        <div class="chat">
+          <div class="santaSays">
+            <div class="img-box"></div>
+            <div class="text-box-santa">
+              <div class="text">
+                <p>Ask like...</p>
+                <p>What is bulkpe ?</p>
+                <p>What you can do?</p>
+              </div>
             </div>
           </div>
+          <div class="userSays">
+            <div class="text"></div>
+          </div>
         </div>
-        <div class="userSays">
-          <div class="text"></div>
-        </div>
-      </div>
-      <hr />
-      <div class="message-box">
-        <div class="message-input">
-          <input
-            id="inputText"
-            type="text"
-            placeholder="What can I help you with?"
-          />
-        </div>
-        <div class="send-btn">
-          <i class="fa-solid fa-paper-plane plane"></i>
+        <hr />
+        <div class="message-box">
+          <div class="message-input">
+            <input
+              id="inputText"
+              type="text"
+              placeholder="What can I help you with?"
+            />
+          </div>
+          <div class="send-btn">
+            <i class="fa-solid fa-paper-plane plane"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -224,7 +226,6 @@
       height: 32px;
       border: none;
       outline: none;
-      background: var(--color-button-primary);
       border-radius: 4px;
       cursor: pointer;
       display: flex;
@@ -233,18 +234,18 @@
       color: white;
       font-weight: bold;
       font-size: 12px;
+      background-color: #4f279b;
     }
     .img-box {
       display: flex;
       align-items: center;
     }
     #open-popup {
-      margin-right: 10px;
-      width: 123px;
-      height: 32px;
+      width: 200px;
+      height: 50px;
       border: none;
       outline: none;
-      background-color: var(--color-button-primary);
+      background-color: #4f279b;
       border-radius: 4px;
       cursor: pointer;
       display: flex;
@@ -253,6 +254,8 @@
       color: white;
       font-weight: bold;
       font-size: 12px;
+      padding: 10px;
+      align-items: center;
     }
     #popup {
       width: 100%;
@@ -269,7 +272,7 @@
       font-size: small;
       display: flex;
       align-items: center;
-      color: black;
+
       font-size: 20px;
     }
     #ss {
@@ -278,6 +281,14 @@
     #ss img {
       width: 20px;
       height: 20px;
+    }
+    .xxyx {
+      position: absolute;
+      width: 100%;
+      /* background-color: red; */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
     }
     #close-popup {
       position: absolute;
