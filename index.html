@@ -6,7 +6,15 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container" id="popup" class="popup" style="display: none">
+    <div id="open-popup">
+      <img
+        src="https://xapp.bulkpe.in/favicon.png"
+        alt="icon"
+        style="width: 30px"
+      />
+      <p id="pp">Docs AI</p>
+    </div>
+    <div class="container" id="popup" class="popup" style="display: block">
       <nav style="background-color: #4f279b">
         <button id="close-popup">X</button>
         <h1>Bulkpe Chatbot</h1>
@@ -196,6 +204,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     #main {
       display: none;
     }
@@ -250,16 +259,18 @@
       position: absolute;
       min-width: 800px;
       z-index: 10;
-      margin-left: -58%;
+      /* margin-left: -58%; */
       margin-top: 5vh;
     }
     #open-popup p {
-      border-radius: 19px;
+      border-radius: 20px;
       padding: 0px 9px;
       margin-left: 5px;
       font-size: small;
       display: flex;
       align-items: center;
+      color: black;
+      font-size: 20px;
     }
     #ss {
       display: flex;
